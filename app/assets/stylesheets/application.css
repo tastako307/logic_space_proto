@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+.application-header {
+  color: #ed8540;
+  background-color: #2a5979;
+  height: 66px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
