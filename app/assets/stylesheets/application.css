@@ -15,10 +15,48 @@
  */
 
 .application-header {
-  color: #ed8540;
   background-color: #2a5979;
   height: 66px;
   width: 100vw;
   display: flex;
   justify-content: space-between;
+}
+
+.header-left-contents{
+  display: flex;
+  align-items: center;
+}
+
+.home-logo {
+  padding-left: 30px;
+  text-decoration: none;
+  color: #ed8540;
+}
+
+.header-right-contents{
+  display: flex;
+  align-items: center;
+}
+
+.window{
+  height: calc( 100vh - 66px );
+  display: flex;
+  background-color: darkblue;
+}
+
+.header-link-btn{
+  padding: 0px 15px;
+  text-decoration: none;
+  color: #ed8540;
+}
+
+.side-content{
+  width: 180px;
+  background-color: #004e66;
+  padding: 15px;
+}
+.main-content{
+  background-color: darkblue;
+  display: flex;
+  justify-content: space-around;
 }
