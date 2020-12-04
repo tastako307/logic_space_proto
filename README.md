@@ -1,24 +1,19 @@
 # README
+ロジックスペースは既存のブログシステムを改良した記事投稿サービスです。
+例えば、これまでのブログサービスではコメント欄が記事下部に存在しています。
+これらは記事作成者による発信には向いていても、記事作成者とコメント作成者、またはコメント作成者動詞の相互交流には向いていません。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ロジックスペースでは、相互発信を行いつつ、ディスカッションの内容に基づいて記事を改良することができる記事投稿システムを開発していきます。
 
-Things you may want to cover:
+上記の目的を達成するため以下の方針をもって実装を行っていきます。
 
-* Ruby version
+1. ロジックスペースは、既存のブログシステムを参考にアレンジを加え、ブログの記事上で活発な議論ができる空間を提供します。
+2. ロジックスペースは、記事主だけではなくコメントをするユーザーも協力して一つの記事を作る環境を提供します。
+3. ロジックスペースは、ユーザーに、開放的、明示的、理知的な論理空間を提供します。
+4. ロジックスペースは、ビギナーからエキスパートまで、望みのレベルの情報に、議場に、アクセスすることができる環境を提供します。
 
-* System dependencies
 
-* Configuration
 
-* Database creation
+ruby ver2.6.5
+rails ver6.0.0
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
