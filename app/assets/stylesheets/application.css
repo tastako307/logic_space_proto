@@ -60,6 +60,12 @@
   justify-content: space-around;
 }
 
+.article-title{
+  padding: 5px, 15px ;
+  font-size: 30px;
+
+}
+
 .article-space{
   width: calc( 100vw - 580px );
   height: calc( 100vh - 66px );
@@ -67,11 +73,13 @@
 }
 
 .article-block{
+  padding: 15px;
   width: calc( 100vw - 580px );
   height: calc( 100vh - 96px );
   background-color: lightgrey;
 }
 .comment-space{
+  overflow: scroll;
   background-color: linen;
   width: 400px;
 }
@@ -85,6 +93,22 @@
 .comment-header{
   border-bottom: black 1px solid;
   display: flex;
+  justify-content: space-between;
+}
+.comment-user{
+  margin: 0px, 10px;
+}
+
+.comment-created_at{
+  margin: 0px, 10px;
+}
+
+.comment-center{
+  border-bottom: black 1px solid;
+}
+
+.comment-footer{
+  border-bottom: black 1px solid;
 }
 
 .branch-box{
@@ -96,10 +120,3 @@
   background-color: linen;
 }
 
-.comment-center{
-  border-bottom: black 1px solid;
-}
-
-.comment-footer{
-  border-bottom: black 1px solid;
-}
