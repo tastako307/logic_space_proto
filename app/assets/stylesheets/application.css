@@ -50,12 +50,12 @@
   color: #ed8540;
 }
 
-.side-content{
+.side-contents{
   width: 180px;
   background-color: #004e66;
   padding: 15px;
 }
-.main-content{
+.main-contents{
   display: flex;
   justify-content: space-around;
 }
@@ -63,7 +63,6 @@
 .article-title{
   padding: 5px, 15px ;
   font-size: 30px;
-
 }
 
 .article-space{
@@ -124,4 +123,9 @@
   height: calc(100vh - 66px);
   padding: 15px;
   background-color: lightgray;
+}
+
+.main-contents{
+  width: 100%;
+  height: 100%;
 }
