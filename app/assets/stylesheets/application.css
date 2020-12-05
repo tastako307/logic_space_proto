@@ -58,6 +58,7 @@
 .main-contents{
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 .article-title{
@@ -111,8 +112,7 @@
 }
 
 .branch-box{
- background-color: blue;
- border-left: blue 5px solid ;
+  border-left: blue 5px solid ;
 }
 
 .branch-comment{
@@ -125,7 +125,3 @@
   background-color: lightgray;
 }
 
-.main-contents{
-  width: 100%;
-  height: 100%;
-}
