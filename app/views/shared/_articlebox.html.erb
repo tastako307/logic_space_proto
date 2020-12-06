@@ -1,6 +1,6 @@
 <div class="article-box">
   <div class="article-form">
-    <% form_with model: article, local: true do |f| %>
+    <%= form_with model: article, class:"article-form-field", local: true do |f| %>
 
       <div class="title-field">
         <label class="article-labels">タイトル</label>
@@ -11,10 +11,13 @@
         <label class="article-labels">記事本文</label>
         <%= f.text_area :text, place_holder: "記事の内容をここに書いてください（マークダウン記法使用可）",class: "article-text-field" %>
       </div>
-
-      <%= f.submit "投稿する" %>
+      <div class="article-btn-field">
+        <%= f.submit "投稿する", class: "article-submit-btn" %>
+      </div>
     <% end %>
   </div>
   <div class="article-preview">
+    <h1 class="preview-label">記事プレビュー</h1>
+    <div class="preview-box"></div>
   </div>
 </div>
