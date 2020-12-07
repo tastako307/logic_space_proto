@@ -1,0 +1,68 @@
+<%= render partial: "shared/header" %>
+
+<div class="window">
+  <div class="side-contents">
+    <%= render 'shared/sidebar'%>
+  </div>
+  <div class="main-contents">
+    <div class="article-space">
+      <div class="article-block">
+        <div class="article-title">
+          タイトル
+        </div>
+        <div class="article-text">記事本文</div>
+      </div>
+    </div>
+    <div class="comment-space">
+      <div class="comment-tree">
+        <div class="root-comment">
+          <div class="comment-header">
+            <div class="comment-user">com_user</div>
+            <div class="comment-created_at">2020-12-03</div>
+          </div>
+          <div class="comment-center">noooooo</div>
+          <div class="comment-footer">
+            <form class="comment-form">
+              <p>
+                コメント：<br> 
+                <textarea name="kanso" rows="4" cols="40"></textarea>
+              </p>
+              <p>
+                <input type="submit" value="送信">
+                <input type="reset" value="リセット">
+              </p>
+            </form>
+          </div>
+          <div class="branch-box">
+            <div class="branch-comment">          
+              <div class="comment-header">
+                <div class="comment-user">com_user</div>
+                <div class="comment-created_at">2020-12-03</div>
+              </div>
+                <div class="comment-center">so good!!</div>
+                <div class="comment-footer">返信</div>
+                <div class="branch-box">
+                  <div class="branch-comment">          
+                    <div class="comment-header">
+                      <div class="comment-user">com_user</div>
+                      <div class="comment-created_at">2020-12-03</div>
+                    </div>
+                    <div class="comment-center">so good!!</div>
+                    <div class="comment-footer">返信</div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="root-comment">
+          <div class="comment-header">
+            <div class="comment-user">com_user</div>
+            <div class="comment-created_at">2020-12-03</div>
+          </div>
+          <div class="comment-center"></div>
+          <div class="comment-footer"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

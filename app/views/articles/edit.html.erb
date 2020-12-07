@@ -1,0 +1,10 @@
+<%= render 'shared/header' %>
+
+<div class="window">
+  <div class="side-contents">
+    <%= render 'shared/sidebar'%>
+  </div>
+  <div class="main-contents">
+    <%= render partial:'shared/articlebox', locals: { article: @article } %>
+  </div>
+</div>
