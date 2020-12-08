@@ -7,4 +7,5 @@ class User < ApplicationRecord
   validates :email,              uniqueness: { message: '指定したメールアドレスは既に登録されています' }
   validates :password,           format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i, \
                                            message: 'パスワードには最低でもアルファベットと数字を一文字づつ含めてください' }
+  has_many :articles
 end

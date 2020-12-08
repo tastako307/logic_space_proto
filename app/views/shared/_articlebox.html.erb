@@ -6,7 +6,10 @@
         <label class="article-labels">タイトル</label>
         <%= f.text_field :title, place_holder: "記事タイトルをここに書いてください", class: "article-title-field" %>
       </div>
-
+      <div class="summary-field">
+        <label class="article-labels">概要（最大１００文字）</label>
+        <%= f.text_area :summary, place_holder: "記事の概要をここに書いてください", class: "article-summary-field" %>
+      </div>
       <div class="text-field">
         <label class="article-labels">記事本文</label>
         <%= f.text_area :text, place_holder: "記事の内容をここに書いてください（マークダウン記法使用可）",class: "article-text-field" %>

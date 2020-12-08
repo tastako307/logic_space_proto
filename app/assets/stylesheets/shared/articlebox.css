@@ -27,6 +27,17 @@
   font-size: 15px;
 }
 
+.summary-field{
+  width: 100%;
+}
+
+.article-summary-field{
+  height: 70px;
+  width: calc(100% - 15px);
+  padding: 5px;
+  font-size: 15px;
+}
+
 .article-form-field{
   height: 100%;
 }
@@ -36,11 +47,11 @@
 }
 
 .text-field{
-  height: calc(100% - 102px);
+  height: calc(100% - 221px);
 }
 
 .article-text-field{
-  height: calc(100% - 55px);
+  height: calc(100% - 80px);
   width: calc(100% - 15px);
   padding: 5px;
   font-size: 15px;

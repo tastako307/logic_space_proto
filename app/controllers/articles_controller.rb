@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
-
+  before_action :authenticate_user!, only:[:new, :create]
   def index
-    # @articles = Article.all
+    # @articles = Article.all.include(:user)
   end
 
   def new
@@ -19,15 +19,16 @@ class ArticlesController < ApplicationController
   def create
     @article = Article.new(article_params)
     if @article.save
-      redirect_to root_path
+      redirect_to root_path #ユーザーページ実装後自分のユーザーページにジャンプするように変更する予定
     else
+      render :new
     end
   end
 
   # def update
   # @article = Article.find(params[:id])
   # if @article.update(article_params)
-  #  redirect_to 
+  #  redirect_to article_path(@article.id)
   # else
   # end
   # end
@@ -35,7 +36,7 @@ class ArticlesController < ApplicationController
   private
 
   def article_params
-    params.require(:article).permit(:title, :text).merge(user_id: current_user.id)
+    params.require(:article).permit(:title, :summary, :text).merge(user_id: current_user.id)
   end
 
 end
