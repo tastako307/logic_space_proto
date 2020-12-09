@@ -1,0 +1,45 @@
+div{
+  padding: 3px;
+  margin: 0px;
+}
+
+.summary-link{
+  text-decoration: none;
+  color: black;
+}
+
+.summary-box{
+  height: 180px;
+  width: 800px;
+  border: firebrick 3px solid;
+}
+.summary-tags{
+  font-size: small;
+}
+
+.summary-header{
+  height: 20px;
+  width: 100%;
+  display: flex;
+  font-size: small;
+}
+
+.summary-username{
+  font-weight: bold;
+}
+.summary-created{
+  font-weight: bold;
+}
+
+.summary-updated{
+  font-weight: bold;
+}
+
+.summary-title{
+  font-weight: bold;
+}
+
+.summary-text{
+  font-size: small;
+  overflow: inherit;
+}
