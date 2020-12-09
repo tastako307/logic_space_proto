@@ -1,16 +1,16 @@
 class ArticlesController < ApplicationController
   before_action :authenticate_user!, only:[:new, :create]
   def index
-    # @articles = Article.all.include(:user)
+    @articles = Article.all.includes(:user)
   end
 
   def new
     @article = Article.new
   end
 
-  # def show
-  # @article = Article.find(params[:id])
-  # end
+  def show
+    @article = Article.find(params[:id])
+  end
 
   # def edit
   # @article = Article.find(params[:id])
