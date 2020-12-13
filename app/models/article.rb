@@ -6,5 +6,6 @@ class Article < ApplicationRecord
                                message: '概要は最大で100文字です' }
 
   belongs_to :user
+  has_many :comments
 
 end
