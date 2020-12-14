@@ -68,18 +68,17 @@
 
 .article-space{
   width: calc( 100vw - 580px );
-  height: calc( 100vh - 66px );
-  padding: 15px;
+  height: calc( 100vh - 72px );
+  padding: 0px, 15px;
 }
 
 .article-block{
   padding: 15px;
   width: calc( 100vw - 610px );
-  height: calc( 100vh - 126px );
+  height: calc( 100vh - 110px );
   background-color: lightgrey;
 }
 .comment-space{
-  overflow: scroll;
   background-color: linen;
   width: 400px;
 }
