@@ -8,4 +8,5 @@ class User < ApplicationRecord
   validates :password,           format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i, \
                                            message: 'パスワードには最低でもアルファベットと数字を一文字づつ含めてください' }
   has_many :articles
+  has_many :comments
 end
