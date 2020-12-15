@@ -14,6 +14,17 @@
   height: 92px;
   margin-bottom: 5px;
 }
+.c-receive-btn{
+  display: block;
+  text-decoration: none;
+  height: 25px;
+  width: 70px;
+  background-color: rgb(59, 149, 227);
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  
+}
 
 .c-submit-btn{
   display: block;
