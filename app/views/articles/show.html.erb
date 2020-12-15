@@ -1,5 +1,4 @@
 <%= render partial: "shared/header" %>
-
 <div class="window">
   <div class="side-contents">
     <%= render 'shared/sidebar'%>
@@ -21,9 +20,12 @@
     </div>
     <div class="comment-space">
         <div class="comment-box">
+          <% com_n = 0 %>
           <% @comments.each do |comment| %>
+            <% com_n += 1 %>
             <div class="root-comment">
               <div class="comment-header">
+                <div class="comment-number"><%= "#{com_n}:" %></div>
                 <div class="comment-user"><%= comment.user.name %></div>
                 <div class="comment-created_at"><%= comment.created_at %></div>
               </div>
