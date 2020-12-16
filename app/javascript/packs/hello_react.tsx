@@ -5,6 +5,8 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import * as PropTypes from 'prop-types'
+import { View } from '../components/preview'
+import { Preview } from '../components/preview'
 
 const Hello = props => (
   <div>Hello {props.name}!</div>
@@ -24,3 +26,5 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.appendChild(document.createElement('div')),
   )
 })
+
+export default View; 
