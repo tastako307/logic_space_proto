@@ -6,25 +6,27 @@ import * as React from 'react'
 import styled from 'styled-components'
 import * as ReactMarkdown from 'react-markdown'
 import { useStateWithStorage } from '../packs/hooks/use_state_with_storage'
+import { render } from 'react-dom'
 
-export const Preview = styled.div`
+export default class ArticlePreview extends React.Component {
+
+  render() {
+    return (
+      <Preview>ここにプレビューが表示される予定（Reactでビューを設計する予定）</Preview>
+    )
+  }
+
+}
+
+const Preview = styled.div`
   width: calc(100% - 6px);
   height: calc(100% - 46px );
   background-color: whitesmoke;
   border: black 3px ridge;
 `
 
-const StorageKey = 'packs/textarea:text'
 
-export const View: React.FC = () => {
-  // const [text, setText] = useStateWithStorage('', StorageKey)
-  return (
-    <>
-      <Preview>
-         {/* <ReactMarkdown source={text} /> */}
-      </Preview>
-    </>
-  )
-}
+
+
 
 
