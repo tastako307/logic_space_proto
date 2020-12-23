@@ -15,7 +15,7 @@
  */
 
 .application-header {
-  background-color: #2a5979;
+  background-color: #2f668a;
   height: 66px;
   width: 100vw;
   display: flex;
@@ -28,9 +28,12 @@
 }
 
 .home-logo {
+  font-size: 20px;
   padding-left: 30px;
   text-decoration: none;
   color: #ed8540;
+  font-family: serif;
+  font-weight: bold;
 }
 
 .header-right-contents{
@@ -41,18 +44,22 @@
 .window{
   height: calc( 100vh - 66px );
   display: flex;
-  background-color: rgb(5, 41, 45);
+  background-color: rgb(11, 76, 84);
 }
 
 .header-link-btn{
   padding: 0px 15px;
   text-decoration: none;
-  color: #ed8540;
+  color: whitesmoke;
+  border: #ed8540 1px solid;
+  background-color: #d17537;
+  margin: 5px;
+  font-family: serif;
 }
 
 .side-contents{
   width: 180px;
-  background-color: #004e66;
+  background-color: #026c8c;
   padding: 15px;
 }
 .main-contents{
