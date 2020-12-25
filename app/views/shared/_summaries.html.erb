@@ -4,13 +4,10 @@
       <%= link_to article_path(article.id), class: "summary-link"  do%>
         <div class="summary-header">
           <div class="summary-username">
-            <%= "投稿者： #{article.user.name}" %>
-          </div>
-          <div class="summary-created">
-            <%= "投稿時刻： #{article.created_at}" %>
+            <%= "User： #{article.user.name}" %>
           </div>
           <div class="summary-updated">
-            <%= "最終更新時刻： #{article.updated_at}" %>
+            <%= "Last_Update： #{article.updated_at}" %>
           </div>
         </div>
         <div class="summary-tags">example: #Javascript</div>

@@ -13,7 +13,11 @@
 3. ロジックスペースは、ユーザーに、開放的、明示的、理知的な論理空間を提供します。
 4. ロジックスペースは、ビギナーからエキスパートまで、望みのレベルの情報に、議場に、アクセスすることができる環境を提供します。
 
-
+## branchesテーブル
+| Column         | Type       | Options           |
+|----------------|------------|-------------------|
+| parent_comment | references | foreign_key: true |
+| child_comment  | references | foreign_key: true |
 
 ruby ver2.6.5
 rails ver6.0.0
