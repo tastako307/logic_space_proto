@@ -6,7 +6,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import * as ReactMarkdown from 'react-markdown'
 import { useStateWithStorage } from '../packs/hooks/use_state_with_storage'
-import * as PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 export default class ArticlePreview extends Component {
   constructor(props) {
@@ -143,12 +143,12 @@ const Preview = styled.div`
 `
 
 ArticlePreview.defaultProps = {
-   article: null
- }
+    article: null
+  }
 
 ArticlePreview.propTypes = {
-  article: PropTypes.object.isRequired
-}
+   article: PropTypes.object.isRequired
+ }
 
 
 
