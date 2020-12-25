@@ -7,7 +7,7 @@ import styled from 'styled-components'
 import * as ReactMarkdown from 'react-markdown'
 import { useStateWithStorage } from '../packs/hooks/use_state_with_storage'
 
-export default class ArticlePreview extends React.Component {
+class ArticlePreview extends React.Component {
 
   render() {
     return (
@@ -132,8 +132,10 @@ const Preview = styled.div`
 `
 
 
+interface ArticlePreview{
+  article: Proptypes.object.isRequired
+}
 
 
-
-
+export default ArticlePreview
 
