@@ -20,10 +20,12 @@
 | child_comment  | references | foreign_key: true |
 
 ruby ver2.6.5
+bundler 2.1.4
 rails ver6.0.0
 JavaScript
 React
 Typescript
 react-markdown
 node.js ver14.15.1（作成時推奨版）
+
 
